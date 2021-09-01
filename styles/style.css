@@ -16,7 +16,9 @@ body {
 .title {
     text-align: center;
     color: white;
+    text-shadow: 1px 1px rgb(255, 215, 0, 0.7);
     font-family: SoulsFont;
+
     margin: 10px;
 }
 
@@ -40,4 +42,50 @@ body {
 
     background: url("../assets/images/card-back.png");
     background-size: 150px;
+
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+
+    transform: rotateY(180deg);
+}
+
+.cardFront {
+    /* Mexer */
+}
+
+.cardBack {
+    /* Mexer */
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.gameOverScreen {
+    display: none;
+    position: fixed;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0.8rem;
+    border: 1px solid gold;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.gameOverScreen h1 {
+    margin-bottom: 0.8rem;
+}
+
+.gameOverScreen img {
+    width: 80px;
+    margin-top: 1.2rem;
 }

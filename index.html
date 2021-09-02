@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Memory game</title>
         <link rel="stylesheet" href="./styles/style.css" />
-        <script src="./scripts/cards.js" defer></script>
+        <script src="./scripts/createCards.js" defer></script>
+        <script src="./scripts/gameHandler.js" defer></script>
     </head>
     <body>
         <div class="title">
@@ -14,16 +15,14 @@
             <h2>Some bosses of Dark Souls Series</h2>
         </div>
         <div class="board">
-            <div class="pieces artorias"></div>
-            <div class="pieces dancer"></div>
-            <div class="pieces gael"></div>
-            <div class="pieces fume-knight"></div>
-            <div class="pieces lost-sinner"></div>
-            <div class="pieces nameless-king"></div>
-            <div class="pieces sir-alonne"></div>
-            <div class="pieces nashandra"></div>
-            <div class="pieces vendrick"></div>
-            <div class="pieces sister-friede"></div>
+            <div class="card">
+                <div class="card-front">
+                    <img src="./assets/images/artorias.jpg" alt="artorias" />
+                </div>
+                <div class="card-back">
+                    <img src="./assets/images/card-back.png" alt="Card back" />
+                </div>
+            </div>
         </div>
         <div class="gameOverScreen">
             <h1>Parabéns você ganhou!</h1>
